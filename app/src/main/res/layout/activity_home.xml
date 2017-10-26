@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="licancan.com.jdconmy.HomeActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <RadioButton
+            android:id="@+id/but_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/but_1"
+            android:text="首页"
+            android:textSize="10dp"
+            />
+        <RadioButton
+            android:id="@+id/but_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:button="@null"
+            android:drawableTop="@drawable/but_2"
+            android:gravity="center"
+            android:textSize="10dp"
+            />
+        <RadioButton
+            android:id="@+id/but_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/but_3"
+            android:text="发现"
+            android:gravity="center"
+            android:textSize="10dp"/>
+        <RadioButton
+            android:id="@+id/but_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/but_4"
+            android:button="@null"
+            android:text="购物车"
+            android:gravity="center"
+            android:textSize="10dp"/>
+        <RadioButton
+            android:id="@+id/but_5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="我的"
+            android:drawableTop="@drawable/but_5"
+            android:gravity="center"
+            android:textSize="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f5f7">
+    <include layout="@layout/top_title2" android:id="@+id/top"/>
+    <LinearLayout
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ListView
+            android:layout_marginTop="10dp"
+            android:scrollbars="none"
+            android:id="@+id/lv_list"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="1dp"
+            android:background="@android:color/white"
+            android:divider="@android:color/darker_gray"
+            android:layout_height="match_parent">
+
+        </ListView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/small_xbanner"
+                android:layout_width="match_parent"
+                isAutoPlay="true"
+                AutoPlayTime="2000"
+                pointSelect="@drawable/white_dot"
+                pointNormal="@drawable/white_tiao"
+                android:layout_height="130dp"
+                android:padding="10dp">
+            </com.stx.xhb.xbanner.XBanner>
+
+            <FrameLayout
+                android:id="@+id/small_fl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

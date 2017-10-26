@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    </com.stx.xhb.xbanner.XBanner>
+    <TextView
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/desc_content"
+        android:layout_below="@+id/xbanner"
+        android:text="content"
+        android:textSize="19dp"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#c00"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/desc_content2"
+        android:layout_below="@+id/desc_content"
+        android:text="content"
+        android:textSize="15dp"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/slod"
+        android:layout_below="@+id/desc_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#c00"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/d"
+            android:text="￥"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#c00"
+            android:id="@+id/desc_money"
+            android:layout_toRightOf="@+id/d"
+            android:text="money"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/desc_oldmoney"
+            android:layout_toRightOf="@+id/desc_money"
+            android:text="money"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:layout_below="@+id/slod"
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:id="@+id/c"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/slod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="促销"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="购买一件可优惠换购热销商品"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@+id/c"
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></View>
+    <RelativeLayout
+        android:id="@+id/dd"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="送至："
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="北京>海淀>西二旗"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/dd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="降价通知!"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RadioButton
+            android:id="@+id/call_good"
+            android:text="联系卖家"
+            android:button="@null"
+            android:drawableTop="@drawable/ld"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+
+            android:layout_toRightOf="@+id/call_good"
+            android:id="@+id/shop_good"
+            android:text="店铺"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/dp"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/care_good"
+            android:layout_toRightOf="@+id/shop_good"
+            android:text="关注"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/xin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/car_goods"
+            android:layout_toRightOf="@+id/care_good"
+            android:text="购物车"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/gouwuche1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:background="#f00"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/car_goods"
+            android:id="@+id/add_goodcar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="添加购物车" />
+
+    </RelativeLayout>
+</RelativeLayout>
